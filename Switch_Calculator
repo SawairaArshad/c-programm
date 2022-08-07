@@ -1,0 +1,53 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a;
+    int b;
+    int x;
+    char ch;
+    do
+    {
+        cout<<"please enter first number";
+        cin>>a;
+        cout<<"please enter second number";
+        cin>>b ;
+        cout<<"please enter your choise\n1: Add\n2: Subtraction\n3: Sin of valueOne\n4: cos of valueTwo\n5: for the square root of valueOne\n6: To check the larger number\n7: for multiplication";
+        cin>>x;
+           switch (x)
+           {
+               case 1:
+               cout<<"result is:"<<a+b<<endl;
+               break;
+               case 2:
+               cout<<"result is:"<<a-b<<endl;
+               break;
+               case 3:
+               cout<<"result is:" <<sin(a)<<endl;
+               break;
+               case 4:
+               cout<<"result is"<<cos(b)<<endl;
+               break;
+               case 5:
+               cout<<"result is:"<<sqrt(a)<<endl;
+               break;
+               case 6:
+               if(a>b)
+                cout<<a;
+                else
+                 cout<<b;
+                 break;
+            case 7:
+            cout<<"result is:"<<a*b<<endl;
+            break;
+            default:
+            cout<<"invalaid statement";
+           }
+           cout<<"press y to continue another key to exit ";
+           cin>>ch;
+    }
+    while(ch=='y'||ch=='Y');
+    return 0;
+}
+    
